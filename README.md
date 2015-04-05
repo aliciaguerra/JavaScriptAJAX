@@ -35,5 +35,7 @@ of the AJAX-enabled page, but may have instead returned to the last full page vi
 between pages instead of navigating between page states - may be desirable, but if fine-grained tracking of page state is
 required, then a pre-HTML5 workaround was to use invisible iframes to trigger changes in the browser's history. A workaround
 implemented by AJAX techniques is to change the URL fragment identifier (the part of a URL after the "#") when an AJAX-enabled
-page is accessed and monitor it for changes.
-
+page is accessed and monitor it for changes. HTML5 provides an extensive API standard for working with the browser's history engine.
+- Dynamic web page updates also make it difficult to bookmark and return to a particular state of the application. Solutions
+to this problem exist, many of which use the URL fragment identifier. The solution provided by HTML5 for the above problem also
+applies to this.
