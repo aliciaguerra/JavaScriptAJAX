@@ -31,4 +31,9 @@ HTML or plain text are always used.
 #Drawbacks to AJAX
 - In pre-HTML5 browsers, pages dynamically created using successive AJAX requests did not automatically register themselves
 with the browser's history engine, so clicking the browser's back button may not have returned the browser to an earlier state
-of the AJAX-enabled page, but may have instead returned to the last full page visited before it.
+of the AJAX-enabled page, but may have instead returned to the last full page visited before it. Such behavior - navigating
+between pages instead of navigating between page states - may be desirable, but if fine-grained tracking of page state is
+required, then a pre-HTML5 workaround was to use invisible iframes to trigger changes in the browser's history. A workaround
+implemented by AJAX techniques is to change the URL fragment identifier (the part of a URL after the "#") when an AJAX-enabled
+page is accessed and monitor it for changes.
+
