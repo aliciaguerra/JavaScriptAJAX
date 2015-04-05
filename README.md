@@ -46,4 +46,13 @@ is slow, the popup may show up at an inconvenient time, when the user has alread
 - Most web crawlers do no execute JavaScript code, so in order to be indexed by search engines, a web application must provide
 an alternative means of accessing the content that would normally be retrieved with AJAX. It has been suggested that a headless
 browser may be used to index content provided by AJAX-enabled websites.
-- Any user whose browser does not support JavaScript or XMLHttpRequest, or simply has this functionality disabled, will not properly be able to load AJAX
+- Any user whose browser does not support JavaScript or XMLHttpRequest, or simply has this functionality disabled, will not properly be able to load pages that depend on AJAX. Devices such as smartphones and PDAs may not have support for the required
+technologies, though this is becoming less of a problem. The only way to let the user carry out functionality is to fall back to non-JavaScript methods. This can be achieved by making sure that links and forms can be resolved properly by not relying solely
+on AJAX.
+- Similarly, some Java applications are built in a way that cannot be read by screen-reading technologies, such as JAWS. 
+The WAI-ARIA standards provide a way to provide hints in such a case.
+- Screen readers that are able to use AJAX may still not be able to properly read the dynamically generated content.
+- The same origin policy prevents some AJAX techniques from being used across domains although the W3C has a draft of the
+XMLHttpRequest object that would enable this functionality. Methods exist to sidestep this security feature by using a 
+special cross domain communications channel embedded as an iframe within the page.
+- The asynchronous call-back style of programming required can lead to complex code that is hard to maintain, to bug, and to test.
