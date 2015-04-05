@@ -43,3 +43,7 @@ applies to this.
 especially if working on an unstable internet connection. For instance, editing a search field may trigger a query to a server
 for search completions, but the user may not know that a search completion popup is forthcoming, and if the internet connection
 is slow, the popup may show up at an inconvenient time, when the user has already proceeded to do something else.
+- Most web crawlers do no execute JavaScript code, so in order to be indexed by search engines, a web application must provide
+an alternative means of accessing the content that would normally be retrieved with AJAX. It has been suggested that a headless
+browser may be used to index content provided by AJAX-enabled websites.
+- Any user whose browser does not support JavaScript or XMLHttpRequest, or simply has this functionality disabled, will not properly be able to load AJAX
