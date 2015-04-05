@@ -39,3 +39,7 @@ page is accessed and monitor it for changes. HTML5 provides an extensive API sta
 - Dynamic web page updates also make it difficult to bookmark and return to a particular state of the application. Solutions
 to this problem exist, many of which use the URL fragment identifier. The solution provided by HTML5 for the above problem also
 applies to this.
+- Depending on the nature of the AJAX application, dynamic page updates may interfere disruptively with user interactions,
+especially if working on an unstable internet connection. For instance, editing a search field may trigger a query to a server
+for search completions, but the user may not know that a search completion popup is forthcoming, and if the internet connection
+is slow, the popup may show up at an inconvenient time, when the user has already proceeded to do something else.
