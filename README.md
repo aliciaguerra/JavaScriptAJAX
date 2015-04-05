@@ -1,4 +1,5 @@
-# AJAX
+# Introduction to AJAX
+- AJAX = "Asynchronous JavaScript and XML"
 - AJAX is a group of interrelated web development techniques used on the client-side to create asynchronous web applications.
 - With AJAX, web applications can send data to and retrieve from a server asynchronously (in the background) without interfering
 with the display and behavior of the existing webpage.
