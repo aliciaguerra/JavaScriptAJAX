@@ -18,4 +18,11 @@ communicates with the server in the background without interfering with the curr
 <li>HTML (or XHTML) and CSS for presentation.</li>
 <li>The Domcument Object Model (DOM) for dynamic display of and interaction with data.</li>
 <li>XML for the interchange of data, and XLST for its manipulation.</li>
+<li>The XMLHttpRequest object for asynchronous communication.</li>
+<li>JavaScript to bring these technologies together.</li>
 </ul>
+- Since then, there have been a number of developments in the technolgies used in the AJAX application, and the definition 
+of the term AJAX.
+- XML is not required for data interchange and, therefore, XSLT is not required for the manipulation of data.
+- JavaScript Object Notation (JSON) is often used as an alternative format, although other formats such as preformatted
+HTML or plain text are always used.
