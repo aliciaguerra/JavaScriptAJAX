@@ -27,3 +27,8 @@ of the term AJAX.
 - XML is not required for data interchange and, therefore, XSLT is not required for the manipulation of data.
 - JavaScript Object Notation (JSON) is often used as an alternative format, although other formats such as preformatted
 HTML or plain text are always used.
+
+#Drawbacks to AJAX
+- In pre-HTML5 browsers, pages dynamically created using successive AJAX requests did not automatically register themselves
+with the browser's history engine, so clicking the browser's back button may not have returned the browser to an earlier state
+of the AJAX-enabled page, but may have instead returned to the last full page visited before it.
